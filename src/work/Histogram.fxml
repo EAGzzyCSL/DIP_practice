@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="work.Histogram_controller">
+   <center>
+       <AreaChart fx:id="areaChart_grayHistogram" createSymbols="false" prefHeight="248.0" prefWidth="300.0" title="grayHistogram">
+           <xAxis>
+               <NumberAxis lowerBound="0" side="BOTTOM" upperBound="255" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis lowerBound="0" side="LEFT" />
+           </yAxis>
+       </AreaChart>
+   </center>
+    <bottom>
+
+
+
+    </bottom>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="Infinity" BorderPane.alignment="CENTER">
+
+          <Label fx:id="label_avgGray" text="平均灰度：">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin></Label>
+          <Label fx:id="label_medianGray" text="中值灰度：">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin></Label>
+          <Label fx:id="label_standardDeviation" text="标准差：">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin></Label>
+          <Label fx:id="label_pxAmount" text="像素总数：">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin></Label>
+
+
+      </HBox>
+   </bottom>
+</BorderPane>
